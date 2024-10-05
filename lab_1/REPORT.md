@@ -35,16 +35,16 @@ Date of finished: 09.10.2024
 
 ## Конфигурация
 
-<img src="./images/R01.png" style="display: block;width:720px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO1.01.png" style="display: block;width:690px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.01.png" style="display: block;width:689px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.02.png" style="display: block;width:688px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/1.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/2.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/4.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/6.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
 ### После задания конфигураций нод, проверим работоспособность:
 
-<img src="./images/SWO1.01-ping.png" style="display: block;width:731px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.01-ping.png" style="display: block;width:735px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.02-ping.png" style="display: block;width:757px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/3.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/5.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/7.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
 ###  Вывод
 
