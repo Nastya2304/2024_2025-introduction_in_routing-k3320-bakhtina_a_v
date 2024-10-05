@@ -31,20 +31,20 @@ Date of finished: 09.10.2024
 
 В yaml-файле была задана топология сети, указанная на схеме:
 
-<img src="./images/net.jpg" style="width:500px; height: auto; background: white">
+<img src="./images/net.png" style="width:500px; height: auto; background: white">
 
 ## Конфигурация
 
-<img src="./images/R01.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO1.01.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.01.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.02.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/R01.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO1.01.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO2.01.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO2.02.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
 ### После задания конфигураций нод, проверим работоспособность:
 
-<img src="./images/SWO1.01 ping.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.01 ping.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
-<img src="./images/SWO2.02 ping.jpg" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO1.01-ping.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO2.01-ping.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+<img src="./images/SWO2.02-ping.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
 ###  Вывод
 
