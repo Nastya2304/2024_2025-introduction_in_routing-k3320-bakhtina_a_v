@@ -40,8 +40,10 @@ Date of finished: 09.10.2024
 <img src="./images/4.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 <img src="./images/6.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
-### После задания конфигураций нод, проверим работоспособность:
+### Проверка работоспособности:
 
+Посмотрев ip адреса, назначенные на R01 - перейдем к SW01.01 и проверим его работоспособность. На скрине можно увидеть, что проверка прошла успешно и пинги прошли.
+Аналогичные операции проделываем для SW02.01 и SW02.02.
 <img src="./images/3.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 <img src="./images/5.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 <img src="./images/7.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
