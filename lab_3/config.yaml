@@ -1,0 +1,46 @@
+name: lab3
+
+mgmt:
+    network: mgmt-net
+    ipv4-subnet: 100.200.20.0/24
+topology:
+    kinds:
+        vr-ros:
+            image: vrnetlab/mikrotik_routeros:6.47.9
+        linux:
+            image: ghcr.io/hellt/network-multitool  
+    nodes:
+        R01.NY:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.8
+        R01.LND:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.9
+        R01.HKI:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.10
+        R01.SPB:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.11
+        R01.MSK:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.12
+        R01.LBN:
+            kind: vr-ros
+            mgmt-ipv4: 100.200.20.13
+        PC1:
+            kind: linux
+            mgmt-ipv4: 100.200.20.14
+        SGI-PRISM:
+            kind: linux
+            mgmt-ipv4: 100.200.20.15
+    links:
+        - endpoints: ["R01.NY:eth4", "SGI-PRISM:eth"]
+        - endpoints: ["R01.NY:eth3", "R01.LBN:eth2"]
+        - endpoints: ["R01.NY:eth2", "R01.LND:eth3"]
+        - endpoints: ["R01.LND:eth2", "R01.HKI:eth3"]
+        - endpoints: ["R01.HKI:eth4", "R01.LBN:eth4"]
+        - endpoints: ["R01.HKI:eth2", "R01.SPB:eth3"]
+        - endpoints: ["R01.SPB:eth4", "PC1:eth"]
+        - endpoints: ["R01.SPB:eth2", "R01.MSK:eth3"]
+        - endpoints: ["R01.MSK:eth2", "R01.LBN:eth3"]
