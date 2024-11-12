@@ -3,7 +3,7 @@
 ```
 [admin@R01.NY] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 add name=bridge_vpn
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
@@ -22,11 +22,11 @@ add bridge=bridge_vpn interface=ether5
 add bridge=bridge_vpn interface=EoMPLS
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.2 interface=bridge network=35.10.0.2
+add address=35.10.0.2 interface=bridgeloop network=35.10.0.2
 add address=192.168.2.101/30 interface=ether3 network=192.168.2.100
 add address=192.168.9.102/30 interface=ether4 network=192.168.9.100
 add address=10.10.50.1/29 interface=bridge_vpn network=10.10.50.0
-add address=192.168.10.101/30 interface=ether3 network=192.168.10.100
+add address=192.168.10.101/30 interface=ether5 network=192.168.10.100
 /ip dhcp-client
 add disabled=no interface=ether1
 /mpls ldp
@@ -48,7 +48,7 @@ set name=R01.NY
 ```
 [admin@R01.LND] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
 set [ find default-name=ether2 ] disable-running-check=no
@@ -60,7 +60,7 @@ set [ find default=yes ] supplicant-identity=MikroTik
 set [ find default=yes ] router-id=35.10.0.3
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.3 interface=bridge network=35.10.0.3
+add address=35.10.0.3 interface=bridgeloop network=35.10.0.3
 add address=192.168.2.102/30 interface=ether4 network=192.168.2.100
 add address=192.168.3.101/30 interface=ether3 network=192.168.3.100
 /ip dhcp-client
@@ -83,7 +83,7 @@ set name=R01.LND
 ```
 [admin@R01.HKI] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
 set [ find default-name=ether2 ] disable-running-check=no
@@ -96,7 +96,7 @@ set [ find default=yes ] supplicant-identity=MikroTik
 set [ find default=yes ] router-id=35.10.0.4
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.4 interface=bridge network=35.10.0.4
+add address=35.10.0.4 interface=bridgeloop network=35.10.0.4
 add address=192.168.3.102/30 interface=ether4 network=192.168.3.100
 add address=192.168.8.102/30 interface=ether5 network=192.168.8.100
 add address=192.168.4.101/30 interface=ether3 network=192.168.4.100
@@ -122,7 +122,7 @@ set name=R01.HKI
 ```
 [admin@R01.SPB] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 add name=bridge_vpn
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
@@ -141,7 +141,7 @@ add bridge=bridge_vpn interface=ether5
 add bridge=bridge_vpn interface=EoMPLS
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.5 interface=bridge network=35.10.0.5
+add address=35.10.0.5 interface=bridgeloop network=35.10.0.5
 add address=10.10.0.2/24 interface=bridge_vpn network=10.10.0.0
 add address=192.168.5.101/30 interface=ether5 network=192.168.5.100
 add address=192.168.4.102/30 interface=ether4 network=192.168.4.100
@@ -168,7 +168,7 @@ set name=R01.SPB
 ```
 [admin@R01.MSK] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
 set [ find default-name=ether2 ] disable-running-check=no
@@ -180,7 +180,7 @@ set [ find default=yes ] supplicant-identity=MikroTik
 set [ find default=yes ] router-id=35.10.0.6
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.6 interface=bridge network=35.10.0.6
+add address=35.10.0.6 interface=bridgeloop network=35.10.0.6
 add address=192.168.6.102/30 interface=ether4 network=192.168.6.100
 add address=192.168.7.101/30 interface=ether3 network=192.168.7.100
 /ip dhcp-client
@@ -203,7 +203,7 @@ set name=R01.MSK
 ```
 [admin@R01.LBN] > export
 /interface bridge
-add name=bridge
+add name=bridgeloop
 /interface ethernet
 set [ find default-name=ether1 ] disable-running-check=no
 set [ find default-name=ether2 ] disable-running-check=no
@@ -216,7 +216,7 @@ set [ find default=yes ] supplicant-identity=MikroTik
 set [ find default=yes ] router-id=35.10.0.7
 /ip address
 add address=172.31.255.30/30 interface=ether1 network=172.31.255.28
-add address=35.10.0.7 interface=bridge network=35.10.0.7
+add address=35.10.0.7 interface=bridgeloop network=35.10.0.7
 add address=192.168.7.102/30 interface=ether4 network=192.168.7.100
 add address=192.168.9.101/30 interface=ether3 network=192.168.9.100
 add address=192.168.8.101/30 interface=ether5 network=192.168.8.100
