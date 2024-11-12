@@ -75,6 +75,16 @@ Date of finished: 05.11.2024
 <img src="./images/ping_1.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 <img src="./images/ping_2.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
 
+##  Трассировка между роутерами
+
+#### R01.SPB -> R01.NY
+
+<img src="./images/2.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+
+#### R01.NY -> R01.SPB
+
+<img src="./images/1.png" style="display: block;width:500px; height: auto; background: white; margin-bottom: 10px">
+
 ###  Вывод
 
 В данной лабораторной работе №3 была построена схема сети связи для "RogaIKopita Games". А также были изучены протоколы OSPF и MPLS, механизмы организации EoMPLS.
